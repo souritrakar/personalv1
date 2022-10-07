@@ -20,9 +20,7 @@ import Document, {
             href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
             rel="stylesheet"
           />
-          
-        
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      
           </Head>
           <body>
 
