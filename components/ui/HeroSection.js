@@ -8,7 +8,7 @@ export default function HeroSection(){
 
     useEffect(() => {
         dencrypt(values[0]);
-    }, []);
+    }, [result]);
 
         return(
 

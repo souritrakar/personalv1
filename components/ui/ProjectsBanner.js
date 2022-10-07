@@ -16,9 +16,9 @@ export default function ProjectsBanner(){
         
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-8 lg:mt-14 lg:ml-8 mr-6 mb-6">
           {
-            projectslist?.map((project)=>{
+            projectslist?.map((project,key)=>{
                 return(
-                    <Project project={project}/>
+                    <Project key={key} project={project}/>
                 )
             })
           }
