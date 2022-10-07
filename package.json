@@ -9,12 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^2.0.12",
+    "babel-preset-es2015": "^6.24.1",
+    "lottie-react": "^2.3.1",
     "next": "12.3.1",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.4.0",
+    "react-particles": "^2.3.3",
+    "react-rough-notation": "^1.0.3",
+    "react-three-fiber": "^6.0.13",
+    "three": "^0.145.0",
+    "tsparticles": "^2.3.4",
+    "tsparticles-engine": "^2.3.3",
+    "use-dencrypt-effect": "^1.0.2"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.4.0",
+    "autoprefixer": "^10.4.12",
     "eslint": "8.24.0",
-    "eslint-config-next": "12.3.1"
+    "eslint-config-next": "12.3.1",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
   }
 }
