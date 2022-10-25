@@ -12,6 +12,15 @@ const firebaseConfig = {
   appId: "1:565627641849:web:79af849827fa7d692a6728"
 };
 
+// const firebaseConfig = {
+//   apiKey: process.env.APP_API_KEY,
+//   authDomain: process.env.APP_AUTH_DOMAIN,
+//   projectId: process.env.APP_PROJECT_ID,
+//   storageBucket: process.env.APP_STORAGE_BUCKET,
+//   messagingSenderId: process.env.APP_SENDER_ID,
+//   appId: process.env.APP_APP_ID
+// };
+
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app)
