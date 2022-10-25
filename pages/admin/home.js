@@ -1,6 +1,6 @@
 import {onAuthStateChanged, getAuth, signOut} from 'firebase/auth'
 import {app,db} from "../../firebaseConfig"
-import { getBlogs } from '../../api/firebase';
+import { getBlogs } from '../../api/firebaseFunc';
 import { useEffect} from 'react'
 import {useRouter}  from 'next/router';
 import Head from 'next/head';

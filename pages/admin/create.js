@@ -1,7 +1,7 @@
 
 import {useState, useEffect} from 'react';
 import { useRouter } from 'next/router'
-import { publishBlog } from '../../api/firebase';
+import { publishBlog } from '../../api/firebaseFunc';
 import Head from 'next/head';
 import { NotionRenderer } from "react-notion";
 import { getAuth, onAuthStateChanged } from 'firebase/auth';

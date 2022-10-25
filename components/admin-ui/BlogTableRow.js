@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { deleteBlog } from "../../api/firebase";
+import { deleteBlog } from "../../api/firebaseFunc";
 
 export default function BlogTableRow({data}){
 

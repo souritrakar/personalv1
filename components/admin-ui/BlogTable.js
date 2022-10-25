@@ -1,5 +1,4 @@
-import { useState } from "react"
-import { getBlogs } from "../../api/firebase"
+
 import BlogTableRow from "./BlogTableRow"
 
 export default function BlogTable({data}){

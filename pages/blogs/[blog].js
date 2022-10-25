@@ -1,4 +1,4 @@
-import { getBlog } from "../../api/firebase";
+import { getBlog } from "../../api/firebaseFunc";
 import { NotionRenderer } from "react-notion";
 import Head from "next/head";
 export default function Blog({blogdata, title}){

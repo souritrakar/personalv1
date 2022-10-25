@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar"
 import BannerHeader from "../../components/BannerHeader"
 import BlogCard from "../../components/admin-ui/BlogCard"
 import Head from "next/head"
-import { getBlogs } from '../../api/firebase';
+import { getBlogs } from '../../api/firebaseFunc';
 
 export default function Blogs({blogs}){
     return(
