@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
@@ -42,7 +44,8 @@
     "tsparticles-engine": "^2.3.3",
     "use-dencrypt-effect": "^1.0.2",
     "uuid": "^9.0.0",
-    "webpack": "^4.46.0"
+    "webpack": "^4.46.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.4.0",
@@ -51,5 +54,6 @@
     "eslint-config-next": "12.3.1",
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8"
-  }
+  },
+  "snyk": true
 }
