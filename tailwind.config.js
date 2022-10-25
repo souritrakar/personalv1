@@ -11,7 +11,9 @@ module.exports = {
         // sans: ['Inter', ...defaultTheme.fontFamily.sans],
         // 'lightfont': ["'Inter', sans-serif"]
 
-         'sans': ['Space Mono', 'Helvetica', 'Arial', 'sans-serif']
+         'sans': ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
+         'inter': ['Inter']
+
 
         
       },

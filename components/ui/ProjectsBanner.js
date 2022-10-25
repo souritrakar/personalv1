@@ -3,7 +3,6 @@ import BannerHeader from "../BannerHeader";
 import projectslist from "../../utils/ProjectsList";
 import Project from "../Project";
 import { Fragment } from "react";
-// import dynamic from 'next/dynamic'
 
 export default function ProjectsBanner(){
 

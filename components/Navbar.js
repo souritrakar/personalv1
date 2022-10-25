@@ -1,16 +1,19 @@
 import React from "react";
 import {useTheme} from 'next-themes'
+import { useRouter } from 'next/router'
 import Image from "next/image";
 import finallogo from "../public/finallogo.png"
 import Link from "next/link";
 
 export default function Navbar() {
     const {theme, setTheme} = useTheme()
-    const links = ['About','Projects', 'Contact']
-
+    const links = ['About','Projects', 'Blogs']
+    const router = useRouter();
+    let path = router.asPath.split('#')[1] || ''
+    console.log(path)
   return (
     
-   <div class="max-w-full sticky dark:bg-[#0F172A] bg-white top-0 z-50 mx-auto px-4 py-10 md:py-10">
+   <div class="max-w-full sticky dark:bg-[#0F172A] bg-white shadow-sm top-0 z-50 mx-auto px-4 py-10 md:py-10">
    <div class="flex  md:flex-row justify-between items-center">
 
     <div class="flex flex-col lg:px-16">
@@ -24,8 +27,8 @@ export default function Navbar() {
         {
           links.map((link, key)=>{
             return(
-              <Link key={key} href={link!== 'Contact' ?  `#${link.toLowerCase()}` : 'mailto:souritra.kar@gmail.com'}>
-                <a className="text-base transition duration-300 hover:bg-gray-600 hover:dark:bg-white py-2 px-4 rounded-lg hover:dark:text-black hover:text-white text-gray-500 dark:text-white font-normal">{link}</a>
+              <Link key={key} href={link.toLowerCase()==="blogs" ? `/${link.toLowerCase()}` : `/#${link.toLowerCase()}`}>
+                <a className={`${path === link.toLowerCase() ? "dark:bg-white bg-gray-600 dark:text-black text-white" : ""} text-base transition duration-300 py-2 px-4 font-semibold rounded-lg hover:dark:bg-white hover:bg-gray-800 hover:dark:text-black hover:text-white`}>{link}</a>
               </Link>
             )
           })

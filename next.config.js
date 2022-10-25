@@ -1,13 +1,16 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  webpack: (config, options) =>
+  webpack: (config) =>
   {
       config.module.rules.push({
           test: /\.pdf$/i,
           type: 'asset/source'
       })
+
+      config.resolve.fallback = { fs: false };
 
       return config
   },

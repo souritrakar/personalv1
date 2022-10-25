@@ -7,7 +7,7 @@ export default function Footer(){
                 >
                     Made with 
                     <strong className="ml-2 dark:text-white text-black" >
-                    NextJS
+                    Next.js
                     </strong>
                 </div>
                

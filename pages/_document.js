@@ -4,7 +4,9 @@ import Document, {
     Main,
     NextScript,
   } from 'next/document'
-  
+
+  import { useTheme } from 'next-themes'
+
   class MyDocument extends Document {
     static async getInitialProps(ctx) {
       const initialProps = await Document.getInitialProps(ctx)
@@ -13,6 +15,7 @@ import Document, {
     }
   
     render() {
+      
       return (
         <Html>
           <Head>
@@ -20,7 +23,7 @@ import Document, {
             href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
             rel="stylesheet"
           />
-      
+
           </Head>
           <body>
 
