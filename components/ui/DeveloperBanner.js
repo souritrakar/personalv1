@@ -17,7 +17,7 @@ export default function DeveloperBanner(){
 
         <ul class="list-none font-normal lg:mr-32 text-2xl space-y-4 lg:mt-4 p-8 rounded-xl">
             
-            <li>💻 Working on: <strong>Website Blog System</strong></li>
+            <li>💻 Working on: <strong>Spotify Mini-Clone</strong></li>
             <li>🤖 Currently learning: <strong>DS & Algorithms</strong></li>
             <li>🤝 Looking to collaborate on: <strong>JavaScript</strong></li>
             <li>⚡ Current favourite technology: <strong>Next.js</strong></li>
